@@ -27,9 +27,20 @@ public class Controlador {
 
         //Se define el file a utilizar, en esta caso el de guategrafo
         File GuateGrafo = new File("guategrafo.txt");
+        Scanner l = new Scanner(GuateGrafo);
+        while(l.hasNextLine()){
+            String Datos = l.nextLine();
+            String[] sDatos = Datos.split(" ");
+                ArrayList<String> d = new ArrayList<>();
+                for(int i = 0; i<sDatos.length;i++){
+                    d.add(sDatos[i]);
+                }
+                ArrayObjetos.add(d);
+        }
 
     } catch(FileNotFoundException e){ 
-        System.out.println("Archivo no encontrado");}
+        System.out.println("Archivo no encontrado");
+    }
 
 
 }
