@@ -1,0 +1,6 @@
+Mixco Antigua 30
+Antigua Escuintla 25
+Escuintla SantaLucia 15
+Mixco SantaLucia 7
+Antigua SantaLucia 8
+Escuintla Mixco 10

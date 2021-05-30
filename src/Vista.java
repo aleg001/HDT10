@@ -43,7 +43,8 @@ public class Vista {
         int op = 2;
         String ops = "";
         boolean validar = true;
-        System.out.println("\n1. Usar traductor");
+
+        System.out.println("\n1. Mostrar direccion mas corta de 2 lugares");
         System.out.println("2. Salir\n");
         while(validar == true){
             System.out.println("Ingrese su opcion:  ");
@@ -73,11 +74,21 @@ public class Vista {
      * @return n/a
      **/
     public void Welcome(){
-        System.out.println("\nBienvenido a Duolingo");
-        System.out.println("Actualmente contamos con: Ingles/Espanol/Frances");
-        System.out.println("En el futuro... Portugues");
+        System.out.println("\nBienvenido a GuateGrafo");
+        System.out.println("Actualmente contamos con un sistema de rutas avanzado");
+        System.out.println("Se utilizan algoritmos de busqueda rapidos de Floyd");
     }
 
+    public void Ciudad1(){
+        System.out.println("Ciudad 1: ");
+    }
+
+    
+    public void Ciudad2(){
+        System.out.println("Ciudad 2: ");
+    }
+    
+    public void LineasSeparacion(){System.out.println("__________________________________________");}
     /**
      * Opciones
      * @param n/a
@@ -158,7 +169,8 @@ public class Vista {
 
       
     public void MensajeSalida(){
-        System.out.println("Gracias por usar nuestro supermercado!");
+        System.out.println("Gracias por usar el buscador mas rapido de rutas!");
+        System.out.println("(Mejor que Waze!!)");
         System.out.println("Autor:");
         System.out.println("Alejandro Gomez");
     }
