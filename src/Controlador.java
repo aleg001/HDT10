@@ -15,12 +15,22 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class Controlador {
+    
+     Controlador() { 
+    //Instancia de Vista
+    Vista V = new Vista();
 
-    //Se define el scanner para leer el archivo de texto
-    Scanner scan = new Scan(System.in);
+    //Instancia del menu
+    Menu M = new Menu();
+   
+    //Instancia de AgregarGrafo:
+    AgregarGrafo AG = new AgregarGrafo();
 
     //Se define el arraylist a utilizar
     ArrayList<ArrayList<String>> ArrayObjetos = new ArrayList<>();
+
+    //Se define el scanner para leer el archivo de texto
+    Scanner s = new Scanner(System.in);
 
     //Ciclo TryCatch para leer el archivo
     try{
@@ -41,6 +51,10 @@ public class Controlador {
     } catch(FileNotFoundException e){ 
         System.out.println("Archivo no encontrado");
     }
-
-
+    AgregarGrafo.AddGraph(ArrayObjetos);
+    V.LineasSeparacion();
+    M.menusito();
 }
+}
+
+
