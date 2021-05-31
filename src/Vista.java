@@ -127,6 +127,17 @@ public class Vista {
         System.out.println("Ingreso erroneo, intente de nuevo.");
     }
 
+        /**
+     * Error
+     * @param n/a
+     * @author Alejandro Gomez
+     * @return n/a
+     **/
+
+    public void Distancia(){
+        System.out.println("Distancias mas cortas");
+        System.out.println("Aguarde un momento...");
+    }
     /**
      * FileInput
      * @param n/a
