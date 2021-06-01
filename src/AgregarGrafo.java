@@ -25,7 +25,7 @@ public class AgregarGrafo {
         //Se define variable a implementar
         boolean TurnOn;
 
-        for (ArrayList<String> data:obj){
+        for (ArrayList<String> data: ArrayObjetos){
             Array_Length.add(Integer.parseInt(data.get(2)));
             Start_Of_Array.add(data.get(0));
             if(!General_Array.contains(data.get(0))){
@@ -59,7 +59,7 @@ public class AgregarGrafo {
 
         ArrayList<Integer> Copy_Of_Array_Values = new ArrayList<>();
         Copy_Of_Array_Values = (ArrayList<Integer>)Array_Values.clone();
-        ciudades=General_Array;
+        Cities=General_Array;
         GraphSearch(Array_Values,General_Array);
         return Copy_Of_Array_Values;
     }
